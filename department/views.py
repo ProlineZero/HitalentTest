@@ -15,7 +15,7 @@ from department.serializers import (
 )
 from employee.models import Employee
 
-logger = logging.getLogger('department')
+logger = logging.getLogger(__name__)
 
 
 def _parse_depth(raw: str | None) -> int:
